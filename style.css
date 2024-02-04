@@ -1,0 +1,178 @@
+/*Outfit*/
+@font-face {
+    font-family: "Outfit";
+    src: url("/assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+    font-style: normal;
+    font-weight: 400 600 700;
+}
+
+/*Young Serif*/
+@font-face {
+    font-family: "Young Serif";
+    src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #5f574e;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #f3e6d8;
+}
+
+.container {
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-section {
+    padding: 30px;
+}
+
+h2, h3 {
+    font-family: "Young Serif", serif;
+    color: #302d2c;
+}
+
+h2 {
+    color: #302d2c;
+    font-size: 2.2rem;
+    line-height: 35px;
+}
+
+h3, p {
+    margin-top: 25px;
+}
+
+.preparation-section {
+    width: 100%;
+    background-color: #fff5fa;
+    padding: 20px;
+    margin: 30px auto;
+}
+
+ul {
+    margin: 0 10px;
+}
+
+ul li {
+    display: table;
+    table-layout: fixed;
+    margin-top: 10px;
+}
+
+li::before {
+    width: 30px;
+    color: #854632;
+    font-weight: 700;
+    display: table-cell;
+}
+
+ul li::before {
+    content: "•";
+    vertical-align: middle;
+}
+
+.list-item-bold {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #7b284f;
+}
+
+h3 {
+    color: #854632;
+    font-size: 1.7rem;
+}
+
+hr {
+    margin-top: 25px;
+    color: #e4ded8;
+}
+
+.instruction-header {
+    font-style: normal;
+    font-weight: 700;
+}
+
+ol {
+    list-style: none;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+ol li {
+    counter-increment: ol-counter;
+    display: table;
+    table-layout: fixed;
+}
+
+ol li::before {
+    content: counter(ol-counter)". ";
+}
+
+table {
+    margin: 10px auto 0;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid #e4ded8;
+    margin: 10px 0 10px 50px;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+th {
+    font-weight: 400;
+    padding-left: 5%;
+    width: 50%;
+}
+
+td {
+    display: inline-block;
+    font-weight: 600;
+    color: #854632;
+    margin: 10px 10px 10px 0;
+}
+
+.attribution { 
+    font-size: 0.6rem; 
+    text-align: center; }
+
+.attribution a {
+    color: #3e52a3;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 750px;
+        margin: 5% auto;
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+    .text-section {
+        padding: 30px 0;
+    }
+}
