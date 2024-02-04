@@ -1,7 +1,7 @@
 /*Outfit*/
 @font-face {
     font-family: "Outfit";
-    src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+    src: url("/assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
     font-style: normal;
     font-weight: 400 600 700;
 }
@@ -9,7 +9,7 @@
 /*Young Serif*/
 @font-face {
     font-family: "Young Serif";
-    src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+    src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf");
 }
 
 * {
