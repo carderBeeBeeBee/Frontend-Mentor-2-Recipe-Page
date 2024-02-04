@@ -64,9 +64,12 @@ ul {
     margin: 0 10px;
 }
 
-ul li {
+li {
     display: table;
     table-layout: fixed;
+}
+
+ul li {
     margin-top: 10px;
 }
 
@@ -115,8 +118,6 @@ ol {
 
 ol li {
     counter-increment: ol-counter;
-    display: table;
-    table-layout: fixed;
 }
 
 ol li::before {
